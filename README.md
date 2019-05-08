@@ -18,6 +18,9 @@ This example is taken from `molecule/default/playbook.yml`:
 
   roles:
     - robertdebock.alternatives
+      alternatives_list:
+        - name: my_alternative
+          path: /usr/bin/basename
 ```
 
 The machine you are running this on, may need to be prepared. Tests have been done on machines prepared by this playbook:
@@ -41,11 +44,6 @@ These variables are set in `defaults/main.yml`:
 ```yaml
 ---
 # defaults file for alternatives
-
-# Set alternatives like this:
-alternatives_list:
-  - name: java
-    path: /usr/lib/jvm/java-7-openjdk-amd64/jre/bin/java
 ```
 
 Requirements

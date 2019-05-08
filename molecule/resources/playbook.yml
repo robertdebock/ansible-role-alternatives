@@ -6,3 +6,6 @@
 
   roles:
     - ansible-role-alternatives
+      alternatives_list:
+        - name: my_alternative
+          path: /usr/bin/basename

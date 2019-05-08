@@ -1,7 +1,2 @@
 ---
 # defaults file for alternatives
-
-# Set alternatives like this:
-alternatives_list:
-  - name: java
-    path: /usr/lib/jvm/java-7-openjdk-amd64/jre/bin/java
