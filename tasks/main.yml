@@ -12,6 +12,7 @@
   alternatives:
     name: "{{ item.name }}"
     path: "{{ item.path }}"
+    link: "{{ item.link }}"
   with_items:
     - "{{ alternatives_list }}"
   when:
