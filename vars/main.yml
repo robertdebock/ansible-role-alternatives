@@ -5,6 +5,8 @@ _alternatives_packages:
     - alternatives
   Alpine:
     - update-alternatives
+  CentOS:
+    - chkconfig
   Debian:
     - dpkg
   Ubuntu:
