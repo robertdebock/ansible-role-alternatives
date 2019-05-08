@@ -17,7 +17,7 @@ This example is taken from `molecule/default/playbook.yml`:
   gather_facts: yes
 
   roles:
-    - robertdebock.alternatives
+    - role: robertdebock.alternatives
       alternatives_list:
         - name: my_alternative
           path: /usr/bin/basename
