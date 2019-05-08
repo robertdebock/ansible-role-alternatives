@@ -4,7 +4,7 @@ _alternatives_packages:
   default:
     - alternatives
   Alpine:
-    - update-alternatives
+    - dpkg
   CentOS:
     - chkconfig
   Debian:
