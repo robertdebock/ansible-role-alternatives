@@ -7,5 +7,6 @@
   roles:
     - role: ansible-role-alternatives
       alternatives_list:
-        - name: my_alternative
+        - name: my_alternative_basename
+          link: /usr/bin/my_basename
           path: /usr/bin/basename

@@ -19,7 +19,8 @@ This example is taken from `molecule/default/playbook.yml`:
   roles:
     - role: robertdebock.alternatives
       alternatives_list:
-        - name: my_alternative
+        - name: my_alternative_basename
+          link: /usr/bin/my_basename
           path: /usr/bin/basename
 ```
 
