@@ -1,0 +1,20 @@
+---
+# tasks file for alternatives
+- name: install alternatives
+  package:
+    name: "{{ alternatives_packages }}"
+    state: present
+  register: alternatives_install_alternatives
+  until: alternatives_install_alternatives is succeeded
+  retries: 3
+
+- name: configure alternatives
+  alternatives:
+    name: "{{ item.name }}"
+    path: "{{ item.path }}"
+  with_items:
+    - "{{ alternatives_list }}"
+  when:
+    - alternatives_list is defined
+  loop_control:
+    label: "{{ item.name }}"

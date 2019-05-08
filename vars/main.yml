@@ -1,0 +1,13 @@
+---
+# vars file for alternatives
+_alternatives_packages:
+  default:
+    - alternatives
+  Alpine:
+    - update-alternatives
+  Debian:
+    - dpkg
+  Ubuntu:
+    - dpkg
+
+alternatives_packages: "{{ _alternatives_packages[ansible_distribution] | default(_alternatives_packages['default']) }}"
