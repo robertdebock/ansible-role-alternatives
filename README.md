@@ -19,9 +19,9 @@ This example is taken from `molecule/default/playbook.yml`:
   roles:
     - role: robertdebock.alternatives
       alternatives_list:
-        - name: my_alternative_basename
-          link: /usr/bin/my_basename
-          path: /usr/bin/basename
+        - name: my_alternative_grep
+          link: /usr/bin/my_grep
+          path: /usr/bin/grep
 ```
 
 The machine you are running this on, may need to be prepared. Tests have been done on machines prepared by this playbook:
