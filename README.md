@@ -19,9 +19,9 @@ This example is taken from `molecule/default/playbook.yml`:
   roles:
     - role: robertdebock.alternatives
       alternatives_list:
-        - name: my_alternative_grep
-          link: /usr/bin/my_grep
-          path: /usr/bin/grep
+        - name: my_alternative_fake_binary
+          link: /bin/my_alternative_fake_binary
+          path: /bin/my_fake_binary
 ```
 
 The machine you are running this on, may need to be prepared. Tests have been done on machines prepared by this playbook:
@@ -34,6 +34,12 @@ The machine you are running this on, may need to be prepared. Tests have been do
 
   roles:
     - robertdebock.bootstrap
+
+  tasks:
+    - name: make a fake binary
+      file:
+        path: /bin/my_fake_binary
+        state: touch
 ```
 
 Also see a [full explanation and example](https://robertdebock.nl/how-to-use-these-roles.html) on how to use these roles.

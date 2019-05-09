@@ -6,3 +6,9 @@
 
   roles:
     - robertdebock.bootstrap
+
+  tasks:
+    - name: make a fake binary
+      file:
+        path: /bin/my_fake_binary
+        state: touch
