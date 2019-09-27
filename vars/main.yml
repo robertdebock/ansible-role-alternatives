@@ -5,13 +5,9 @@ _alternatives_packages:
     - alternatives
   Alpine:
     - dpkg
-  CentOS:
-    - chkconfig
-  Fedora:
+  RedHat:
     - chkconfig
   Debian:
     - dpkg
-  Ubuntu:
-    - dpkg
 
-alternatives_packages: "{{ _alternatives_packages[ansible_distribution] | default(_alternatives_packages['default']) }}"
+alternatives_packages: "{{ _alternatives_packages[ansible_os_family] | default(_alternatives_packages['default']) }}"
