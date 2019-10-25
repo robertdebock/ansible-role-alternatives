@@ -22,10 +22,6 @@ This example is taken from `molecule/resources/playbook.yml`:
 
   roles:
     - role: robertdebock.alternatives
-      alternatives_list:
-        - name: my_alternative_fake_binary
-          link: /bin/my_alternative_fake_binary
-          path: /bin/my_fake_binary
 ```
 
 The machine you are running this on, may need to be prepared.
