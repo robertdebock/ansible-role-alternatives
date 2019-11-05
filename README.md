@@ -82,6 +82,8 @@ This role has been tested on these [container images](https://hub.docker.com/):
 |---------|---|--------------|
 |amazonlinux|1|no|
 |amazonlinux|latest|no|
+|amazonlinux|1|no|
+|amazonlinux|latest|no|
 |alpine|latest|no|
 |alpine|edge|yes|
 |debian|stable|yes|
