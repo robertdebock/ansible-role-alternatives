@@ -34,7 +34,6 @@ galaxy_info:
 
   galaxy_tags:
     - alternatives
-    - alpine
     - archlinux
     - centos
     - debian
