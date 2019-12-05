@@ -48,7 +48,7 @@ After running this role, this playbook runs to verify that everything works, thi
   gather_facts: yes
 
   roles:
-    - role: robertdebock.alternatives
+    - role: {{ galaxy_namespace }}.alternatives
       alternatives_list:
         - name: my_alternative_fake_binary
           link: /bin/my_alternative_fake_binary
@@ -124,7 +124,6 @@ Some variarations of the build matrix do not work. These are the variations and 
 | variation                 | reason                 |
 |---------------------------|------------------------|
 | Archlinux | target not found: alternatives |
-
 
 
 Testing
