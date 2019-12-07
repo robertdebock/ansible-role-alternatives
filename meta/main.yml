@@ -36,6 +36,6 @@ galaxy_info:
     - alternatives
     - archlinux
     - centos
-    - rhel
+    - redhat
 
 dependencies: []
