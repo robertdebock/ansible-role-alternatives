@@ -54,7 +54,6 @@ After running this role, this playbook runs to verify that everything works, thi
           link: /bin/my_alternative_fake_binary
           path: /bin/my_fake_binary
 ```
-```
 
 Also see a [full explanation and example](https://robertdebock.nl/how-to-use-these-roles.html) on how to use these roles.
 
