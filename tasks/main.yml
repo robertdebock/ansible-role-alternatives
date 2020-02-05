@@ -13,8 +13,7 @@
     name: "{{ item.name }}"
     path: "{{ item.path }}"
     link: "{{ item.link }}"
-  with_items:
-    - "{{ alternatives_list }}"
+  loop: "{{ alternatives_list }}"
   when:
     - alternatives_list is defined
   loop_control:
