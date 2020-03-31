@@ -1,5 +1,4 @@
-alternatives
-=========
+# alternatives
 
 Set alternatives
 
@@ -7,8 +6,7 @@ Set alternatives
 |------|------|-------|---------|
 |[![travis](https://travis-ci.com/robertdebock/ansible-role-alternatives.svg?branch=master)](https://travis-ci.com/robertdebock/ansible-role-alternatives)|[![github](https://github.com/robertdebock/ansible-role-alternatives/workflows/Ansible%20Molecule/badge.svg)](https://github.com/robertdebock/ansible-role-alternatives/actions)|[![quality](https://img.shields.io/ansible/quality/40297)](https://galaxy.ansible.com/robertdebock/alternatives)|[![downloads](https://img.shields.io/ansible/role/d/40297)](https://galaxy.ansible.com/robertdebock/alternatives)|
 
-Example Playbook
-----------------
+## Example Playbook
 
 This example is taken from `molecule/resources/converge.yml` and is tested on each push, pull request and release.
 ```yaml
@@ -58,8 +56,7 @@ For verification `molecule/resources/verify.yml` run after the role has been app
 
 Also see a [full explanation and example](https://robertdebock.nl/how-to-use-these-roles.html) on how to use these roles.
 
-Role Variables
---------------
+## Role Variables
 
 These variables are set in `defaults/main.yml`:
 ```yaml
@@ -67,8 +64,7 @@ These variables are set in `defaults/main.yml`:
 # defaults file for alternatives
 ```
 
-Requirements
-------------
+## Requirements
 
 - Access to a repository containing packages, likely on the internet.
 - A recent version of Ansible. (Tests run on the current, previous and next release of Ansible.)
@@ -81,17 +77,14 @@ The following roles can be installed to ensure all requirements are met, using `
 
 ```
 
-Context
--------
+## Context
 
 This role is a part of many compatible roles. Have a look at [the documentation of these roles](https://robertdebock.nl/) for further information.
 
 Here is an overview of related roles:
 ![dependencies](https://raw.githubusercontent.com/robertdebock/drawings/artifacts/alternatives.png "Dependency")
 
-
-Compatibility
--------------
+## Compatibility
 
 This role has been tested on these [container images](https://hub.docker.com/):
 
@@ -111,8 +104,7 @@ The minimum version of Ansible required is 2.8 but tests have been done to:
 - The current version.
 - The development version.
 
-Exceptions
-----------
+## Exceptions
 
 Some variarations of the build matrix do not work. These are the variations and reasons why the build won't work:
 
@@ -121,8 +113,7 @@ Some variarations of the build matrix do not work. These are the variations and 
 | Archlinux | target not found: alternatives |
 
 
-Testing
--------
+## Testing
 
 [Unit tests](https://travis-ci.com/robertdebock/ansible-role-alternatives) are done on every commit, pull request, release and periodically.
 
@@ -156,13 +147,11 @@ image="centos" tox
 image="debian" tag="stable" tox
 ```
 
-License
--------
+## License
 
 Apache-2.0
 
 
-Author Information
-------------------
+## Author Information
 
 [Robert de Bock](https://robertdebock.nl/)
