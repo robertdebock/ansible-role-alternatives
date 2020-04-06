@@ -5,7 +5,7 @@
   gather_facts: no
 
   roles:
-    - robertdebock.bootstrap
+    - role: robertdebock.bootstrap
 
   tasks:
     - name: make a fake binary
