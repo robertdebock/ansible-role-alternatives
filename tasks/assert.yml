@@ -1,0 +1,21 @@
+---
+- name: test if alternatives_list is set correctly
+  assert:
+    that:
+      - alternatives_list | length > 0
+      - alternatives_list is iterable
+  when:
+    - alternatives_list is defined
+
+- name: test if item in alternatives_list is set correctly
+  assert:
+    that:
+      - item.name is defined
+      - item.name | length > 0
+      - item.link is defined
+      - item.link | length > 0
+      - item.path is defined
+      - item.path | length > 0
+  when:
+    - alternatives_list is defined
+  loop: "{{ alternatives_list }}"

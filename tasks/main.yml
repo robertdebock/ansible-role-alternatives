@@ -1,5 +1,8 @@
 ---
 # tasks file for alternatives
+- name: include assert.yml
+  include_tasks: assert.yml
+
 - name: install alternatives
   package:
     name: "{{ alternatives_packages }}"
