@@ -16,6 +16,7 @@
       - item.link | length > 0
       - item.path is defined
       - item.path | length > 0
+    quiet: yes
   when:
     - alternatives_list is defined
   loop: "{{ alternatives_list }}"
