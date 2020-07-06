@@ -1,5 +1,6 @@
 ---
 # vars file for alternatives
+
 _alternatives_packages:
   default:
     - alternatives
