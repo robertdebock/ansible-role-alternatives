@@ -7,9 +7,6 @@
   package:
     name: "{{ alternatives_packages }}"
     state: present
-  register: alternatives_install_alternatives
-  until: alternatives_install_alternatives is succeeded
-  retries: 3
 
 - name: configure alternatives
   alternatives:
