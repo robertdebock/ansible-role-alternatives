@@ -4,6 +4,7 @@
     that:
       - alternatives_list | length > 0
       - alternatives_list is iterable
+    quiet: yes
   when:
     - alternatives_list is defined
 
