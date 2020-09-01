@@ -63,7 +63,7 @@ These variables are set in `defaults/main.yml`:
 ---
 # defaults file for alternatives
 
-# This is an example of how to use python3.7 on a system that has both 
+# This is an example of how to use python3.7 on a system that has both
 # python 2.7 and python 3.7.
 # alternatives_list:
 #   - name: python
