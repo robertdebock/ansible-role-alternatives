@@ -12,3 +12,4 @@
       file:
         path: /bin/my_fake_binary
         state: touch
+        mode: "0755"
