@@ -12,8 +12,11 @@
   assert:
     that:
       - item.name is defined
+      - item.name is string
       - item.link is defined
+      - item.link is string
       - item.path is defined
+      - item.path is string
     quiet: yes
   when:
     - alternatives_list is defined
