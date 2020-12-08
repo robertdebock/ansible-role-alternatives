@@ -2,9 +2,9 @@
 
 Set alternatives
 
-|Travis|GitHub|Quality|Downloads|Version|
-|------|------|-------|---------|-------|
-|[![travis](https://travis-ci.com/robertdebock/ansible-role-alternatives.svg?branch=master)](https://travis-ci.com/robertdebock/ansible-role-alternatives)|[![github](https://github.com/robertdebock/ansible-role-alternatives/workflows/Ansible%20Molecule/badge.svg)](https://github.com/robertdebock/ansible-role-alternatives/actions)|[![quality](https://img.shields.io/ansible/quality/40297)](https://galaxy.ansible.com/robertdebock/alternatives)|[![downloads](https://img.shields.io/ansible/role/d/40297)](https://galaxy.ansible.com/robertdebock/alternatives)|[![Version](https://img.shields.io/github/release/robertdebock/ansible-role-alternatives.svg)](https://github.com/robertdebock/ansible-role-alternatives/releases/)|
+|Travis|GitHub|GitLab|Quality|Downloads|Version|
+|------|------|------|-------|---------|-------|
+|[![travis](https://travis-ci.com/robertdebock/ansible-role-alternatives.svg?branch=master)](https://travis-ci.com/robertdebock/ansible-role-alternatives)|[![github](https://github.com/robertdebock/ansible-role-alternatives/workflows/Ansible%20Molecule/badge.svg)](https://github.com/robertdebock/ansible-role-alternatives/actions)|[![gitlab](https://gitlab.com/robertdebock/ansible-role-alternatives/badges/master/pipeline.svg)](https://gitlab.com/robertdebock/ansible-role-alternatives)|[![quality](https://img.shields.io/ansible/quality/40297)](https://galaxy.ansible.com/robertdebock/alternatives)|[![downloads](https://img.shields.io/ansible/role/d/40297)](https://galaxy.ansible.com/robertdebock/alternatives)|[![Version](https://img.shields.io/github/release/robertdebock/ansible-role-alternatives.svg)](https://github.com/robertdebock/ansible-role-alternatives/releases/)|
 
 ## [Example Playbook](#example-playbook)
 
