@@ -1,7 +1,7 @@
 ---
 
 - name: test if alternatives_list is set correctly
-  assert:
+  ansible.builtin.assert:
     that:
       - alternatives_list is iterable
     quiet: yes
@@ -9,7 +9,7 @@
     - alternatives_list is defined
 
 - name: test if item in alternatives_list is set correctly
-  assert:
+  ansible.builtin.assert:
     that:
       - item.name is defined
       - item.name is string
