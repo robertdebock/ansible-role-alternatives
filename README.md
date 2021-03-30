@@ -33,7 +33,7 @@ The machine needs to be prepared in CI this is done using `molecule/resources/pr
 
   tasks:
     - name: make a fake binary
-      file:
+      ansible.builtin.file:
         path: /bin/my_fake_binary
         state: touch
         mode: "0755"
