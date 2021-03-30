@@ -9,7 +9,7 @@
 
   tasks:
     - name: make a fake binary
-      file:
+      ansible.builtin.file:
         path: /bin/my_fake_binary
         state: touch
         mode: "0755"
