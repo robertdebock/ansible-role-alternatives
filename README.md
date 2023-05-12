@@ -25,7 +25,7 @@ The machine needs to be prepared. In CI this is done using [`molecule/default/pr
 
 ```yaml
 ---
-- name: prepare
+- name: Prepare
   hosts: all
   become: yes
   gather_facts: no
@@ -34,7 +34,7 @@ The machine needs to be prepared. In CI this is done using [`molecule/default/pr
     - role: robertdebock.bootstrap
 
   tasks:
-    - name: make a fake binary
+    - name: Make a fake binary
       ansible.builtin.file:
         path: /bin/my_fake_binary
         state: touch

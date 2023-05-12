@@ -7,6 +7,6 @@
   roles:
     - role: ansible-role-alternatives
       alternatives_list:
-        - name: my_alternative_fake_binary
+        - name: My_alternative_fake_binary
           link: /bin/my_alternative_fake_binary
           path: /bin/my_fake_binary
