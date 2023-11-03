@@ -2,9 +2,9 @@
 
 Set alternatives
 
-|GitHub|GitLab|Quality|Downloads|Version|
-|------|------|-------|---------|-------|
-|[![github](https://github.com/robertdebock/ansible-role-alternatives/workflows/Ansible%20Molecule/badge.svg)](https://github.com/robertdebock/ansible-role-alternatives/actions)|[![gitlab](https://gitlab.com/robertdebock-iac/ansible-role-alternatives/badges/master/pipeline.svg)](https://gitlab.com/robertdebock-iac/ansible-role-alternatives)|[![quality](https://img.shields.io/ansible/quality/40297)](https://galaxy.ansible.com/robertdebock/alternatives)|[![downloads](https://img.shields.io/ansible/role/d/40297)](https://galaxy.ansible.com/robertdebock/alternatives)|[![Version](https://img.shields.io/github/release/robertdebock/ansible-role-alternatives.svg)](https://github.com/robertdebock/ansible-role-alternatives/releases/)|
+|GitHub|GitLab|Downloads|Version|
+|------|------|---------|-------|
+|[![github](https://github.com/robertdebock/ansible-role-alternatives/workflows/Ansible%20Molecule/badge.svg)](https://github.com/robertdebock/ansible-role-alternatives/actions)|[![gitlab](https://gitlab.com/robertdebock-iac/ansible-role-alternatives/badges/master/pipeline.svg)](https://gitlab.com/robertdebock-iac/ansible-role-alternatives)|[![downloads](https://img.shields.io/ansible/role/d/24433)](https://galaxy.ansible.com/robertdebock/alternatives)|[![Version](https://img.shields.io/github/release/robertdebock/ansible-role-alternatives.svg)](https://github.com/robertdebock/ansible-role-alternatives/releases/)|
 
 ## [Example Playbook](#example-playbook)
 
@@ -103,7 +103,7 @@ The minimum version of Ansible required is 2.12, tests have been done to:
 - The current version.
 - The development version.
 
-If you find issues, please register them in [GitHub](https://github.com/robertdebock/ansible-role-alternatives/issues)
+If you find issues, please register them in [GitHub](https://github.com/robertdebock/ansible-role-alternatives/issues).
 
 ## [License](#license)
 
