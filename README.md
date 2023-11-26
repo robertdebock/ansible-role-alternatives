@@ -1,4 +1,4 @@
-# Ansible role [alternatives](#alternatives)
+# [Ansible role alternatives](#alternatives)
 
 Set alternatives
 
