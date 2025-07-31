@@ -25,4 +25,5 @@
     - name: Assert alternative link points to correct target
       ansible.builtin.assert:
         that:
-          - link_target.stdout == "/bin/my_fake_binary"
+          - link_target.stdout == "/etc/alternatives/my_alternative_fake_binary"
+        quiet: true
