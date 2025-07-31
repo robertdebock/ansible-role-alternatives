@@ -2,11 +2,27 @@
 - name: Verify
   hosts: all
   become: true
-  gather_facts: true
+  gather_facts: false
 
-  roles:
-    - role: ansible-role-alternatives
-      alternatives_list:
-        - name: My_alternative_fake_binary
-          link: /bin/my_alternative_fake_binary
-          path: /bin/my_fake_binary
+  tasks:
+    - name: Check if alternative link exists
+      ansible.builtin.stat:
+        path: /bin/my_alternative_fake_binary
+      register: alternative_link
+
+    - name: Assert alternative link exists
+      ansible.builtin.assert:
+        that:
+          - alternative_link.stat.exists
+          - alternative_link.stat.islnk
+        quiet: true
+
+    - name: Check if alternative link points to correct target
+      ansible.builtin.command: readlink /bin/my_alternative_fake_binary
+      register: link_target
+      changed_when: false
+
+    - name: Assert alternative link points to correct target
+      ansible.builtin.assert:
+        that:
+          - link_target.stdout == "/bin/my_fake_binary"
