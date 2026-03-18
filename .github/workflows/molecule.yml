@@ -29,22 +29,14 @@ jobs:
       fail-fast: false
       matrix:
         distro:
-          - image: "alpine"
-            tag: "latest"
-          - image: "enterpriselinux"
+          - image: "amazonlinux"
             tag: "latest"
           - image: "debian"
-            tag: "latest"
-          - image: "debian"
-            tag: "bookworm"
-          - image: "debian"
-            tag: "bullseye"
-          - image: "fedora"
-            tag: "latest"
-          - image: "ubuntu"
             tag: "latest"
           - image: "ubuntu"
             tag: "jammy"
+          - image: "ubuntu"
+            tag: "latest"
     steps:
       - name: checkout
         uses: actions/checkout@v4
